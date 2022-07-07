@@ -6,7 +6,7 @@
 /*   By: mmardi <mmardi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 17:24:22 by mmardi            #+#    #+#             */
-/*   Updated: 2022/06/28 18:50:24 by mmardi           ###   ########.fr       */
+/*   Updated: 2022/07/07 12:59:32 by mmardi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ int	remove_from_env_utils(char **env, char *arg, int l, int *i)
 	while (env[++(*i)])
 	{
 		j = (*i) + 1;
-		if (strncmp(arg, env[*i], count2(env[*i])) == 0
+		if (ft_strncmp(arg, env[*i], count2(env[*i])) == 0
 			&& (count2(env[*i]) == ft_strlen(arg)))
 		{
 			free (env[*i]);
