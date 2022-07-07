@@ -6,7 +6,7 @@
 /*   By: mmardi <mmardi@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 21:23:37 by mmardi            #+#    #+#             */
-/*   Updated: 2022/07/07 12:56:54 by mmardi           ###   ########.fr       */
+/*   Updated: 2022/07/07 13:08:11 by mmardi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ void	shlvl_increm(char **env, int i)
 	tmp = ft_strjoin(tmp, s);
 	free (s);
 	env[i] = ft_strdup(tmp);
-	puts(env[i]);
 	get_globale(1);
 	free (tmp);
 }
